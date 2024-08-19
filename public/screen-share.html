@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Share Your Screen</h1>
+        </header>
+        <main>
+            <form id="nameForm" class="card">
+                <input type="text" id="nameInput" placeholder="Enter your name" required>
+                <button type="submit" id="startButton" disabled>Start Sharing</button>
+            </form>
+            <div id="screenShareArea" class="card" style="display: none;">
+                <h2>Welcome, <span id="userName"></span>!</h2>
+                <p>Your screen is now being shared.</p>
+                <video id="screenVideo" autoplay muted></video>
+                <button id="stopButton">Stop Sharing</button>
+            </div>
+        </main>
+    </div>
+    <script src="screen-share.js"></script>
+</body>
+</html>

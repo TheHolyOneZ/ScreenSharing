@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Screens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Watch Screens</h1>
+        </header>
+        <main class="watch-screen-layout">
+            <div id="userList" class="card">
+                <h2>Active Users</h2>
+                <ul id="activeUsersList"></ul>
+            </div>
+            <div id="screenView" class="card">
+                <h2>Viewing: <span id="viewingUser">No one</span></h2>
+                <video id="sharedScreen" autoplay></video>
+                <button id="stopWatchingButton" style="display: none;">Stop Watching</button>
+            </div>
+        </main>
+    </div>
+    <script src="watch-screen.js"></script>
+</body>
+</html>
