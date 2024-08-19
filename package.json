@@ -1,0 +1,14 @@
+{
+    "name": "screen-sharing-app",
+    "version": "1.0.0",
+    "description": "A WebRTC screen sharing application",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "socket.io": "^4.3.1"
+    }
+  }
+  
